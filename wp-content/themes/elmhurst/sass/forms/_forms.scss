@@ -1,0 +1,48 @@
+@import "buttons";
+@import "fields";
+
+input[type="email"] {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  width: 100%;
+
+  &::placeholder {
+    opacity: 1;
+    font-style: italic;
+  }
+}
+
+input[type="submit"] {
+  background: gray;
+  border-radius: 0;
+  border: none;
+  color: #FFF;
+  font-size: 15px;
+  padding: 4px 5px;
+  line-height: 1;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+}
+
+
+// Contact Form 7
+
+span.wpcf7-not-valid-tip {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+div.wpcf7-response-output {
+  margin: 0;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.wpcf7-form p {
+  margin-bottom: 10px;
+}
