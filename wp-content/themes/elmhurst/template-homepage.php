@@ -5,18 +5,15 @@
   <div id="primary" class="content-area">
     <main id="main" class="site-main container" role="main">
       
-      <?php
-      while ( have_posts() ) : the_post();
+     <h1><?php the_field('homepage_hero_title'); ?></h1>
+     <h2><?php the_field('homepage_hero_intro'); ?></h2>
 
-        get_template_part( 'template-parts/content', 'page' );
+     <section class="elm-spotlights">
+      <?php if(have_rows('homepage_spotlights')) : while(have_rows('homepage_spotlights')) : the_row();
 
-        // If comments are open or we have at least one comment, load up the comment template.
-        if ( comments_open() || get_comments_number() ) :
-          comments_template();
-        endif;
-
-      endwhile; // End of the loop.
       ?>
+
+     </section>
 
   
     </main><!-- #main -->
