@@ -195,8 +195,8 @@ add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_script' );
 
 // Google Fonts
 function wpb_add_google_fonts() {
-
-wp_enqueue_style( 'wpb-google-fonts', 'http://fonts.googleapis.com/css?family=Lato:300,400,700', false ); 
+  wp_enqueue_style( 'wpb-google-fonts-lora', 'http://fonts.googleapis.com/css?family=Lato:300,400,700', false );
+  wp_enqueue_style( 'wpb-google-fonts-roboto', 'http://fonts.googleapis.com/css?family=Roboto:300,400,500,700', false ); 
 }
 
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );

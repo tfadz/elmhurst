@@ -13,13 +13,13 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer elm-footer">
 		
-		<div class="site-info">
+		<div class="container elm-footer__main">
 		<?php
 			wp_nav_menu( array(
-			'theme_location' => 'menu-1',
-			'menu_id'        => 'primary-menu',
+			'theme_location' => 'footer-menu',
+			'menu_id'        => 'footer-menu',
 			) );
 		?>
 
