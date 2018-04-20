@@ -1,6 +1,11 @@
 .elm-header {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex: 12;
+
+  &__logo {
+  }
 }
 
 
@@ -30,9 +35,6 @@
   }
 }
 
-.elm-header {
-  display: flex;
-}
 
 .dropotron {
   text-align: left;
