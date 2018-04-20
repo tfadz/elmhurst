@@ -141,10 +141,14 @@ function register_my_menus() {
   register_nav_menus(
     array(
       'footer-menu' => __( 'Footer Menu' ),
-      'mobile-menu' => __( 'Mobile Menu' )
+      'mobile-menu' => __( 'Mobile Menu' ),
+      'top-left-nav' => __( 'Top Left Nav' ),
+      'top-right-nav' => __( 'Top Right Nav' )
     )
   );
 }
+
+
 
 add_action( 'init', 'register_my_menus' );
 
